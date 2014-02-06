@@ -4,8 +4,8 @@ class ParaviewLionPython27Nightly < Cask
   version 'latest'
   no_checksum
   link 'paraview.app'
-
-  def caveats; <<-EOS.undent
+  caveats do
+    <<-EOS.undent
     This version of ParaView is for OS X Lion (10.7) or Mountain Lion (10.8)
     and should be installed if the system Python version is 2.6. If your
     OS version is Lion (10.7) or later, and your system Python version is
